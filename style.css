@@ -408,6 +408,54 @@ svg {
     margin: 30px auto;
   }
 }
+
+.newsletter{
+  background-color: rgb(240, 240, 240);
+  width: 75%;
+  margin: 10px auto;
+  padding: 50px 20px;
+  .newsletter-flex{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    p{
+      text-align: center;
+    }
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    input{
+      padding: 15px;
+      width: 90%;
+      border-radius: 20px;
+      border: lightgrey 2px solid;
+    }
+    button{
+      border: none;
+      padding: 20px 20px;
+      &:hover{
+        background-color:  rgb(250, 90, 100) ;
+      }
+    }
+  }
+  @media (max-width: 625px) {
+    h2{
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    p{
+      display: none;
+    }
+    input{
+      width: 200px;
+    }
+  }
+}
 @media (max-width: 800px) {
   .mobile-menu-toggle {
     display: block;
