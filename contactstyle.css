@@ -5,13 +5,15 @@
   font-size: 25px;
   background-color: rgb(250, 90, 100);
 }
-
-.contact-form {
-  margin: 40px 10px;
-  display: flex;
+.section{
+      margin: 40px 10px;
+  padding: 40px;
+   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
+
+}
+.contact-form {
 
   form {
     display: flex;
@@ -36,4 +38,12 @@
       }
     }
   }
+}
+
+.map{
+    height: 500px;
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
 }
